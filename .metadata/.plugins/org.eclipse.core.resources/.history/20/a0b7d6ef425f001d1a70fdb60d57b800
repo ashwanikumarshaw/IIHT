@@ -1,0 +1,34 @@
+package com.oop;
+
+public class TV {
+	String brand;
+	String modelname;
+	Integer screensize;
+	Integer price;
+	Integer color;
+	String displaytype;
+	
+	public void insertData(String brand, String modelname, Integer screensize, Integer price, Integer color, String displaytype) {
+		
+		this.brand = brand;
+		this.modelname = modelname;
+		this.screensize = screensize;
+		this.price = price;
+		this.color = color;
+		this.displaytype = displaytype;
+	}
+	void displayTV() {  System.out.println(brand+" "+modelname);}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  TV lg=new TV();
+		  lg.brand="LG";
+		  lg.modelname="4k oled";
+		  lg.screensize=55;
+		  lg.price=60000;
+		  lg.displaytype="Oled";
+		  System.out.println(lg.brand+" "+lg.modelname);
+
+	}
+
+}

@@ -3,19 +3,19 @@ package com.oop;
 public class TV {
 	static String brand;
 	static String modelname;
-	static  Integer screensize;
-	static Integer price;
-	 static Integer color;
-	 static String displaytype;
+	Integer screensize;
+	Integer price;
+	Integer color;
+	String displaytype;
 	
-	static void insertData(String b, String m, Integer s, Integer p, Integer c, String d) {
+	static void insertData(String brand, String modelname, Integer screensize, Integer price, Integer color, String displaytype) {
 		
-		brand = b;
-		modelname = m;
-		screensize = s;
-		price = p;
-		color = c;
-		displaytype = d;
+		brand = brand;
+		modelname = modelname;
+		screensize = screensize;
+		price = price;
+		color = color;
+		displaytype = displaytype;
 	}
 	static void displayTV() {  System.out.println(brand+" "+modelname);}
 
