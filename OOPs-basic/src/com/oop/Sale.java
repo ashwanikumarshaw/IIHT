@@ -1,0 +1,18 @@
+package com.oop;
+
+public class Sale extends Employees{
+	Integer Bonus=10000;
+	Integer insentive;
+	//Method Overriding -> runtime polymorphism
+	void Working() {
+		System.out.println("Sales Emp is working");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Sale anu=new Sale();
+		anu.insentive=46500;
+		anu.TotalSalary(anu.BaseSalary, anu.Bonus, anu.insentive);
+		anu.Working();
+	}
+
+}

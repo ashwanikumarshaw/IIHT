@@ -1,0 +1,5 @@
+package com.oop;
+
+class Employees {
+	Integer BaseSalary = 50000;// parent class
+}

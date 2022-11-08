@@ -1,7 +1,10 @@
 package com.oop;
 
+class Employees {
+	Integer BaseSalary = 50000;// parent class
+}
 
-public class Dev extends HR {// child class
+public class Dev extends Employees {// child class
 	Integer Bonus = 2500;
 	Integer total = Bonus + BaseSalary;
 

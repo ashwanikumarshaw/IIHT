@@ -30,8 +30,8 @@ public class TV {
 		lg.screensize = 55;
 		lg.price = 60000;
 		lg.displaytype = "Oled";
-		System.out.println(lg.brand + " " + lg.modelname);//LG 4k oled
-		lg.displayTV();//LG 4k oled
+		System.out.println(lg.brand + " " + lg.modelname);
+		lg.displayTV();
 
 		TV samsung = new TV();
 		samsung.displayTV();// null null

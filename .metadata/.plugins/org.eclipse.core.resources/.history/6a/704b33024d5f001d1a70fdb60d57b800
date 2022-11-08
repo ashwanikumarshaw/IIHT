@@ -1,0 +1,10 @@
+package com.oop;
+
+class Employees {
+	Integer BaseSalary = 50000;// parent class
+	
+	void TotalSalary(Integer BS,Integer Bonus) {
+		Integer total =BS+Bonus;
+		System.out.println(total);
+	}
+}
