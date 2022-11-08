@@ -675,3 +675,18 @@ Caused by: java.net.SocketException: Connection reset
 !MESSAGE Save operation warnings.
 !SUBENTRY 1 org.eclipse.core.resources 2 234 2022-11-08 14:25:29.927
 !MESSAGE The project description file (.project) for 'Javaoops' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-08 14:33:09.184
+!MESSAGE Preparing classpath changed notification Javaoops
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-08 14:33:09.185
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-08 14:33:09.185
+!MESSAGE buffering callback sts4.classpath.cXhshDeQ Javaoops true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-08 14:33:09.185
+!MESSAGE executing callback sts4.classpath.cXhshDeQ 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-08 14:33:09.192
+!MESSAGE executing callback sts4.classpath.cXhshDeQ SUCCESS [done]
