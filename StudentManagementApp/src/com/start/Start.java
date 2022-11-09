@@ -15,11 +15,13 @@ public class Start {
 		System.out.println("App running...");
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		while (true) {
+			System.out.println("-------------------------------------");
 			System.out.println("press 1 to add a student");
 			System.out.println("press 2 to delete a student");
 			System.out.println("press 3 to display a student");
 			System.out.println("press 4 to exit the app");
 			int choice=Integer.parseInt(br.readLine());
+			System.out.println("-------------------------------------");
 			if(choice==1) {
 				//add
 				System.out.println("Student name: ");
@@ -65,7 +67,7 @@ public class Start {
 				//exit
 				break;
 			}else {
-				
+				System.out.println("----------- wrong choice ----------");
 			}
 		}
 		
