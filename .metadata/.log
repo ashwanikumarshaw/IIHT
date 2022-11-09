@@ -830,3 +830,42 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-09 13:15:35.012
 !MESSAGE executing callback sts4.classpath.rQzngkIG SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-09 13:34:12.652
+!MESSAGE Preparing classpath changed notification StudentManagementApp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-09 13:34:12.653
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-09 13:34:12.656
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-09 13:34:12.656
+!MESSAGE buffering callback sts4.classpath.rQzngkIG StudentManagementApp false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-09 13:34:12.657
+!MESSAGE executing callback sts4.classpath.rQzngkIG 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-09 13:34:12.663
+!MESSAGE executing callback sts4.classpath.rQzngkIG SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2022-11-09 13:34:24.693
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-09 13:39:52.108
+!MESSAGE Preparing classpath changed notification StudentManagementApp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-09 13:39:52.109
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-09 13:39:52.110
+!MESSAGE classpath=3 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-09 13:39:52.111
+!MESSAGE buffering callback sts4.classpath.rQzngkIG StudentManagementApp false 3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-09 13:39:52.111
+!MESSAGE executing callback sts4.classpath.rQzngkIG 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-09 13:39:52.116
+!MESSAGE executing callback sts4.classpath.rQzngkIG SUCCESS [done]
