@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import com.start.student.Student;
+import com.start.student.StudentDao;
 
 public class Start {
 
@@ -27,7 +28,12 @@ public class Start {
 				String city=br.readLine();
 				Student stu=new Student(name,phone,city);
 				
-				System.out.println(stu);
+				System.out.println(stu.toString());
+				
+				if(StudentDao.addStudent(stu)) {
+					System.out.println("Inserted");
+				}else System.out.println("Error occurred ");
+				
 			}else if(choice==2) {
 				//delete
 				
