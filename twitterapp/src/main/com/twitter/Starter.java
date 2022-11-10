@@ -68,6 +68,8 @@ public class Starter {
 			} else {
 				System.out.println("----------- wrong choice ----------");
 			}
+			
+			System.out.println("Thanks for using Twitter App");
 		}
 	}
 
