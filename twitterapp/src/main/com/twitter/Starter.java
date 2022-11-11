@@ -46,7 +46,7 @@ public class Starter {
 					login = LocalDateTime.now();
 					loginMenu(name);
 				} else
-					System.out.println("Something went wrong");
+					System.out.println("Wrong Id or Password");
 
 			} else if (choice == 3) {
 				// password reset
@@ -68,9 +68,9 @@ public class Starter {
 			} else {
 				System.out.println("----------- wrong choice ----------");
 			}
-			
-			System.out.println("Thanks for using Twitter App");
+
 		}
+		System.out.println("Thanks for using Twitter App");
 	}
 
 	private static void loginMenu(String name) throws IOException, SQLException {
@@ -94,28 +94,28 @@ public class Starter {
 					System.out.println("Posted...");
 				} else
 					System.out.println("Something went wrong");
-				
+
 			} else if (choice == 2) {
 				// view my post
 				if (TwitterService.myPost(name)) {
 					System.out.println("-------------------------------------");
 				} else
 					System.out.println("No post found");
-				
+
 			} else if (choice == 3) {
 				// view all post
 				if (TwitterService.allPost()) {
 					System.out.println("-------------------------------------");
 				} else
 					System.out.println("No post found");
-				
+
 			} else if (choice == 4) {
 				// view all users
 				if (TwitterService.allUser()) {
 					System.out.println("-------------------------------------");
 				} else
 					System.out.println("No User Found");
-				
+
 			} else if (choice == 5) {
 				// reset password
 				System.out.println("Old Password:");

@@ -9,11 +9,11 @@ import main.com.twitter.entity.Tweet;
 import main.com.twitter.entity.User;
 
 public class TwitterDao {
-
+	static Connection con;
 	public static boolean addUser(User user) {
 
 		try {
-			Connection con = ConnectionProvider.CreateCon();
+			con = ConnectionProvider.CreateCon();
 			String query = "INSERT INTO `twitterapp`.`user` ( `uname`, `upass`, `uemail`) VALUES (?,?,?);";
 			PreparedStatement pstmt = con.prepareStatement(query);
 			pstmt.setString(1, user.getUname());
@@ -31,7 +31,7 @@ public class TwitterDao {
 	public static ResultSet verifyUser(User user) {
 
 		try {
-			Connection con = ConnectionProvider.CreateCon();
+			con = ConnectionProvider.CreateCon();
 			String query = "SELECT * FROM twitterapp.user WHERE uname=? and upass=?;";
 			PreparedStatement pstmt = con.prepareStatement(query);
 			pstmt.setString(1, user.getUname());
@@ -49,7 +49,7 @@ public class TwitterDao {
 	public static boolean updatePass(User user) {
 
 		try {
-			Connection con = ConnectionProvider.CreateCon();
+			con = ConnectionProvider.CreateCon();
 			String query = "UPDATE `twitterapp`.`user` SET `upass` = ? WHERE (`uid` = ?);";
 			PreparedStatement pstmt = con.prepareStatement(query);
 
@@ -66,7 +66,7 @@ public class TwitterDao {
 	public static boolean logout(Log log) {
 
 		try {
-			Connection con = ConnectionProvider.CreateCon();
+			con = ConnectionProvider.CreateCon();
 			String query = "INSERT INTO `twitterapp`.`userlog` (`unmae`, `login`, `logout`) VALUES (?,?,?);";
 			PreparedStatement pstmt = con.prepareStatement(query);
 			pstmt.setString(1, log.getUname());
@@ -84,7 +84,7 @@ public class TwitterDao {
 	public static boolean tweet(Tweet t) {
 
 		try {
-			Connection con = ConnectionProvider.CreateCon();
+			con = ConnectionProvider.CreateCon();
 			String query = "INSERT INTO `twitterapp`.`twitte` (`uname`, `msg`) VALUES (?,?);";
 			PreparedStatement pstmt = con.prepareStatement(query);
 			pstmt.setString(1, t.getUname());
@@ -101,7 +101,7 @@ public class TwitterDao {
 	public static ResultSet mytweet(String name) {
 
 		try {
-			Connection con = ConnectionProvider.CreateCon();
+			con = ConnectionProvider.CreateCon();
 			String query = "SELECT * FROM twitterapp.twitte where uname=?;";
 			PreparedStatement pstmt = con.prepareStatement(query);
 			pstmt.setString(1, name);
@@ -119,7 +119,7 @@ public class TwitterDao {
 	public static ResultSet alltweet() {
 
 		try {
-			Connection con = ConnectionProvider.CreateCon();
+			con = ConnectionProvider.CreateCon();
 			String query = "SELECT * FROM twitterapp.twitte ;";
 			PreparedStatement pstmt = con.prepareStatement(query);
 
@@ -137,7 +137,7 @@ public class TwitterDao {
 	public static ResultSet allUsers() {
 
 		try {
-			Connection con = ConnectionProvider.CreateCon();
+			con = ConnectionProvider.CreateCon();
 			String query = "SELECT * FROM twitterapp.user;";
 			PreparedStatement pstmt = con.prepareStatement(query);
 

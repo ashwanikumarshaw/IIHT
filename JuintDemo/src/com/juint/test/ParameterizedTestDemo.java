@@ -22,7 +22,7 @@ class ParameterizedTestDemo {
 		System.out.println(args);
 	}
 
-	//EnumSource
+	// EnumSource
 	enum TV {
 		LG, Samsung, Toshiba;
 	}
@@ -43,10 +43,11 @@ class ParameterizedTestDemo {
 	public void methodSourceTes(String args) {
 		System.out.println(args);
 	}
-	//CsvSource
 	
+	// CsvSource
+
 	@ParameterizedTest
-	@CsvSource({"Ashu","Anu","Nishant","Anuran"})
+	@CsvSource({ "Ashu", "Anu", "Nishant", "Anuran" })
 	public void CsvSourceTest(String args) {
 		System.out.println(args);
 	}
