@@ -5,13 +5,7 @@ public class User {
 	private String uname;
 	private String upass;
 	private String uemail;
-	public User(Integer uid, String uname, String upass, String uemail) {
-		super();
-		this.uid = uid;
-		this.uname = uname;
-		this.upass = upass;
-		this.uemail = uemail;
-	}
+	
 	public User(String uname, String upass, String uemail) {
 		super();
 		this.uname = uname;

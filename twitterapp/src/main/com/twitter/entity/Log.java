@@ -15,6 +15,10 @@ public class Log {
 		this.logout = logout;
 	}
 
+	public Log() {
+		super();
+	}
+
 	public Integer getLid() {
 		return lid;
 	}
