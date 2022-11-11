@@ -22,6 +22,7 @@ public class Starter {
 			System.out.println("press 4 to exit the app");
 			int choice = Integer.parseInt(br.readLine());
 			System.out.println("-------------------------------------");
+			
 			if (choice == 1) {
 				// register
 				System.out.println("Username: ");
